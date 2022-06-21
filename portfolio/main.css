@@ -1,0 +1,222 @@
+:root {
+    --prm-drkcolor : rgb(19, 16, 16);
+    --text-col :  rgb(218, 165, 32)
+}
+
+html,body {
+    width:100%;
+    height:100%;
+   background-color: var(--prm-drkcolor);
+   color: var(--text-col);
+   font-size:1.1rem;
+   font-family:monospace;
+   font-weight: 500;
+
+}
+
+.homelink a {
+    margin-left:0.77rem;
+    text-decoration: none;
+}
+
+.homelink a:hover {
+    transition:1.1s;
+    filter:brightness(2);
+}
+
+.navlist{
+    padding-top:0.74rem;
+    font-size:1.8rem;
+    color:var(--text-col);
+    top:0;
+    width:100%;
+    position: fixed;
+    z-index: 10;
+    background-color: var(--prm-drkcolor);
+    border-bottom: 0.1px solid var(--text-col);
+
+}
+
+.navlist > * {
+    display:inline-block;
+    text-transform: capitalize;
+}
+
+
+.navlist ul {
+    float: right;
+    list-style-type:none;
+}
+
+.navlist li {
+    display:inline-block;
+    margin-left:2rem;
+    margin-right:1rem;
+}
+
+.navlist li:last-child {
+    margin-right: 3rem;
+}
+
+.links {
+    margin-left:0.77rem;
+    color:var(--text-col);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+
+.navlist a:hover {
+    transition:1.1s;
+    filter:brightness(2);
+}
+
+#welcome-section {
+    display:flex;
+    position:relative;
+    z-index: 1;
+    flex-direction: column;
+    width:100%;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    animation: appear 3s ease-in;
+    text-align: center;
+}
+#welcome-section h1 {
+    margin-bottom: 1.27rem;
+}
+
+
+
+#projects {
+    background-color:var(--prm-drkcolor);
+    color: #00FF33;
+    display:block;
+    width:100%;
+    height:100vh;
+
+}
+
+#projects h2{
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+.project-tile {
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    row-gap:2rem;
+    
+}
+.images{
+    width:25rem;
+    height:17rem;
+    border: 4px solid #00FF33;
+    border-radius: 2rem;
+
+}
+.project {
+    text-align: center;
+}
+
+
+
+#projects button,#projects a{
+    width:10rem;
+    height:4rem;
+    border-radius: 2rem;
+    border: 1px solid #00FF33;
+    font-size:1.3rem;
+    font-weight: 600;
+    background-color:transparent;
+    color: #00FF33;
+    text-decoration: none;
+}
+
+#projects a {
+    border:none;
+}
+
+.center {
+    margin-top: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+#projects button:hover{
+    background-color: #00FF33;
+    color: var(--prm-drkcolor);
+    transition: 0.4s ease-out;
+}
+#projects a:hover{
+    color:var(--prm-drkcolor);
+    transition: 0.4s ease
+}
+#profile-section {
+    background-color:var(--prm-drkcolor);
+    color: white;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    width:100%;
+    height:100vh;
+}
+
+#profile-section a {
+    border: 1px solid white;
+    cursor: pointer;
+    margin-top:2rem;
+    font-size:1.7rem;
+    padding:0.5rem;
+    color:white;
+    text-decoration: none;
+    border-radius: 2rem;
+    transition: 0.9s ease;
+}
+
+
+#profile-section a:hover {
+    color:var(--prm-drkcolor);
+    background-color:white;
+    
+
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        filter:brightness(0);}
+    to {opacity:1;
+        filter:brightness(1);}
+}
+
+@media only screen and  (max-width:55em) {
+    body {
+        font-size: 0.1rem;
+    }
+    
+    .navlist {
+        font-size:0.78rem;
+    }
+    
+    .project-tile {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap:1rem;
+    }
+
+    .images{
+        width:10rem;
+        height:8rem;
+        border: 4px solid #00FF33;
+        border-radius: 2rem;
+    }
+    .project h3{
+        font-size: 1rem;
+    }
+
+}

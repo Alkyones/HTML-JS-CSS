@@ -1,0 +1,121 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #3289f2;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    opacity: 0.5;
+}
+
+.ex p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-group-div {
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.input-group-div input[type=text] {
+    width: 30%;
+    height: 3rem;
+    border: 2px solid #fff;
+    border-radius: 0.7rem;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: transparent;
+}
+
+.input-group-div input[type=text]::placeholder {
+    color: #fff;
+    font-size:1rem;
+    padding-left: 1rem;
+}
+
+.input-group-div input[type=text]:focus {
+    animation: focus 5s ease-in-out forwards infinite;
+}
+
+@keyframes focus {
+    0% {
+        border: 2px solid #fff;
+    }
+
+    30% {
+        border: 2px solid rgb(46, 93, 137);
+    }
+
+
+    60% {
+        border: 2px solid rgb(67, 134, 197);
+    }
+
+    100% {
+        border: 2px solid #fff;
+    }
+    
+}
+
+
+.button-group-div input[type=button] {
+    width: 30%;
+    height: 2rem;
+    border: none;
+    border-radius: 0.6rem;
+    background-color: #fff;
+    color: #3289f2;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.button-group-div input[type=button]:hover {
+    background-color: #276dc2;
+    color: #fff;
+    border-radius: 1.1rem;
+}
+
+.preview-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #fff;
+
+    padding:2rem;
+}
